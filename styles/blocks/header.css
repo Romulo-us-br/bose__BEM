@@ -1,0 +1,30 @@
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image:url(../../images/image-3.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__waves {
+  background-image:url(../../images/sound_waves.png);
+  height: 76px;
+  width: 63px;
+  margin-bottom: 32px;
+}
+
+.header__title {
+  margin: 0;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+.header__bottom{
+  padding:0 20px 40px;
+}
