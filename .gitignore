@@ -1,0 +1,18 @@
+# Dependências (pasta mais pesada do projeto)
+node_modules/
+
+# Build/Produção
+dist/
+build/
+
+# Variáveis de ambiente (Segurança: senhas e chaves de API)
+.env
+.env.local
+
+# Logs de erro
+npm-debug.log*
+yarn-error.log*
+
+# Arquivos do Sistema Operacional/Editor
+.vscode/
+DS_Store

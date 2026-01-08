@@ -1,7 +1,7 @@
 .header {
   box-sizing: border-box;
   height: 100vh;
-  background-image:url(../../images/image-3.png);
+  background-image:url(../images/image-3.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .header__waves {
-  background-image:url(../../images/sound_waves.png);
+  background-image:url(../images/sound_waves.png);
   height: 76px;
   width: 63px;
   margin-bottom: 32px;
