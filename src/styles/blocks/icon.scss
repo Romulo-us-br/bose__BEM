@@ -5,7 +5,9 @@
   background-image: url(../images/Icon-Burger-menu-hover.png);
   background-size: cover;
 
-  @include onTable{
+  @include hover(transform, scale(1.2));
+
+  @include onTable {
     height: 32px;
     width: 32px;
   }
@@ -16,6 +18,10 @@
 
   &--menu {
     background-image: url(../images/Icon-Burger-menu.png);
+
+    &:hover {
+      background-image: url(../images/Icon-Burger-menu-hover.png);
+    }
   }
 
   &--close {

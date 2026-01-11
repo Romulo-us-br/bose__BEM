@@ -10,9 +10,16 @@
 
   &__waves {
     background-image: url(../images/sound_waves.png);
-    height: 76px;
-    width: 63px;
-    margin-bottom: 32px;
+    height: 57px;
+    width: 48px;
+    margin-bottom: 16px;
+    background-size: cover;
+
+    @include onTable{
+      width: 64px;
+      height: 76px;
+      margin-bottom: 40px;
+    }
   }
 
   &__title {
@@ -22,10 +29,20 @@
     font-size: 32px;
     line-height: 100%;
     letter-spacing: -1.5px;
+  
+    @include onTable{
+      font-size: 40px;
+    }
+  
+  
   }
 
   &__bottom {
     @include contentPaddingInLine;
     padding-bottom: 40px;
+
+    @include onTable{
+      padding-bottom: 64px;
+    }
   }
 }
