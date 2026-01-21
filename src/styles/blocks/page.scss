@@ -1,6 +1,9 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
 .page {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: $font-page;
   line-height: 140%;
   color: $main-text-color;
 
@@ -8,7 +11,7 @@
 
   &__body {
     padding: 0;
-    min-width: 320px;
+    min-width: $width-min;
   }
 
   &__menu {
@@ -19,7 +22,7 @@
 
     pointer-events: none;    
     opacity: 0;
-    transition: all 0.3s;
+    transition: all $effectDuration;
     transform: translate(100%);
 
     &:target {

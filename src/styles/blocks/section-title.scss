@@ -1,0 +1,25 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.section-title{
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-weight: $font-700;
+  font-size: $font-title;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+  
+  @include onTablet{
+    font-size: $font-title-tabblet;
+    margin-bottom: 64px;
+  }
+  @include onDeskptop{
+    font-size: $font-title-desktop;
+  }
+  &--align--left{
+    text-align: left;
+  }
+
+}

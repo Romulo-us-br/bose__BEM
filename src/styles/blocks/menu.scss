@@ -1,13 +1,16 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
 .menu {
   box-sizing: border-box;
   height: 100vh;
   background-color: #fff;
-  font-weight: 700;
+  font-weight: $font-700;
   text-transform: uppercase;
 
   &__top {
     margin-bottom: 32px;
-    @include onTable{
+    @include onTablet{
       margin-bottom: 0;
     }
   }
@@ -16,9 +19,6 @@
     margin-bottom: 40px;
   }
 
-  &__content {
-    @include contentPaddingInLine;
-  }
 
   &__phone-number {
     display: block;

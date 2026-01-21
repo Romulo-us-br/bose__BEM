@@ -1,0 +1,96 @@
+  @use '../utils/mixins' as *;
+  @use '../utils/variables' as *;
+
+  .contacts {
+
+    &__form {
+      @include pageGrid;
+
+
+
+      &--form {
+        display: grid;
+        grid-column: span 2;
+        row-gap: 16px;
+        
+
+        @include onTablet {
+          grid-column: span 3;
+        }
+
+        @include onDeskptop {
+          grid-column: span 5;
+        }
+      }
+
+      &--input {
+        
+        height: 48px;
+        border-radius: 40px;
+        padding-left: 16px;
+
+        &-message {
+          font-family: inherit;
+          border-radius: 20px;
+          padding-top: 14px;
+          height: 148px;
+          border: 2px solid #292929;
+
+        }
+      }
+
+
+      &--button {
+        margin-top: 32px;
+        margin-bottom: 48px;
+        text-decoration: none;
+        color: #292929;
+        border: 2px solid #292929;
+        border-radius: 40px;
+        text-align: center;
+        align-content: center;
+        height: 56px;
+      }
+    }
+
+    &__info {
+      display: grid;
+      grid-column: span 2;
+      margin-bottom: 96px;
+
+      @include onTablet {
+        grid-column: span 3;
+      }
+
+      @include onDeskptop {
+        grid-column: 8/-2;
+      }
+
+      &--title {
+        color: #9FADC2;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+      }
+
+      &--info {
+        color: #3E3E3E;
+      }
+
+    }
+  }
+
+  .footer {
+    background-image: url(../images/end-back.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
+    @include onTablet {
+      height: 400px;
+    }
+
+    @include onDeskptop {
+      height: 460px;
+    }
+  }
